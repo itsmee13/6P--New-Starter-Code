@@ -35,11 +35,12 @@ buttonShow.onclick = function() {
 buttonDouble.onclick = function () {
     console.log("deck has" + cards.length + "cards." );
     for( let card of cards) {
-        if (cards.lenght !== 16) {
+        if (cards.length !== 16) {
             cards.push(cards);
-            game.insertAdjacentHTML("beforeend",
-      " <div style='Background -image: url(" + url+ card +")' class= card'>"
- );                                   
+        game.insertAdjacentHTML("beforeend",
+            "<div style='background-image: url(" + url +
+            card +
+            ")' class='card'>");
         }
     }
     
