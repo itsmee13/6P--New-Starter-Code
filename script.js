@@ -100,6 +100,16 @@ buttonFlip.onclick = function() {
 // Here we need a function for clicking on individual cards.
 // (It won't work until we finish writing it.)
 $(document).click(function(event) {
-    // Get the id property of the clicked thing.
+}   // Get the id property of the clicked thing.
     let clickedId = event.target.id;
+    console.log(clickedId);
+    if (clickedId !== "") {
+     documnet.getElementById(clickedId).style.backgroundImage + "url('" + urlprefix + cards[clickedId] + "')"; 
+        
+        
+        
+    }
+    
+    
+    .style.backgroundImage = "url
 });
