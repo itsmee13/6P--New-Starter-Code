@@ -104,10 +104,28 @@ $(document).click(function(event) {
     let clickedId = event.target.id;
     console.log(clickedId);
     if (clickedId !== "") { 
-         document.getElementById(clickedId).style.backgroundImage + "url('" + urlprefix + cards[clickedId] + "')"; 
-       
+        document.getElementById(clickedId).style.backgroundImage + "url('" + urlprefix + cards[clickedId] + "')"; 
+     
+ clickedIds.push(clickedId);
+        console.log(clickedId);
+              
+        if (clickedIds.length === 2) {
+  }       
+        let card1picture =    document.getElemeentByIds[clickedIds(0)].style.backgroundImage; 
+        let card2picture =  document.getElemeentByIds[clickedIds(1)].style.backgroundImage;
+       console.log(card1picture);
+       console.log(card2picture);       
+    if (card1picture === card2picture) {
+        console.log("match");
+        document.getElementById(clickedIds[0]).id = "";
+ document.getElementById(clickedIds[1]).id = "";   
+   clickedIds = [];
+        console.log(clikckedIds);
         
-    }
-    
-    
+    }    
+          
+    else 
+            
+   
+    }  
 });
